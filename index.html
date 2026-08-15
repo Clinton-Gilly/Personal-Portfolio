@@ -3,1201 +3,944 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gilly - Personal Portfolio</title>
 
-  <!--
-    - favicon
-  -->
+  <title>Clinton Kiplagat — Full-Stack Developer</title>
+  <meta name="description"
+    content="Clinton Kiplagat (Gilly) — full-stack developer in Nairobi, Kenya. I build production web apps with Next.js, React and Supabase: SACCO and billing systems, AI support desks, M-Pesa payments and brand websites.">
+  <meta name="author" content="Clinton Kiplagat">
+  <meta name="theme-color" content="#08080a">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Clinton Kiplagat — Full-Stack Developer">
+  <meta property="og:description"
+    content="Full-stack developer in Nairobi, Kenya. Next.js, React, Supabase, M-Pesa and AI — 28 shipped, live products.">
+  <meta property="og:image" content="./website-demo-image/desktop.png">
+
   <link rel="shortcut icon" href="./assets/images/New design logo.webp" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/New design logo.webp" alt="Richard hanrick" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Clinton Kiplagat</h1>
-
-          <p class="title">Web developer</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="sungur:sungurclinton@gmail.com" class="contact-link">sungurclinton@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+254715329007" class="contact-link">+254715329007</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">Dec 08, 2002</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Nairobi, Kenya</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm Creative Director and UI/UX Designer from Nairobi, Kenya, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
-          </p>
-
-          <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Clinton was hired to create a corporate identity. We were very pleased with the work done. He has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Clinton was hired to create a corporate identity. We were very pleased with the work done. He has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Clinton was hired to create a corporate identity. We were very pleased with the work done. He has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Clinton was hired to create a corporate identity. We were very pleased with the work done. He has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Zetech University</h4>
-
-              <span>2022 — 2025</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Samoei Boys high school</h4>
-
-              <span>2018 — 2021</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">AIC Chebarus Primary</h4>
-
-              <span>2009 — 2017</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form  action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-
-            <div class="input-wrapper">
-              <input type="hidden" name="access_key" value="807a140d-2175-4926-ac38-05bc1e746d00">
-
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
+  <!-- ===== preloader ===== -->
+  <div class="preloader" data-preloader>
+    <div class="preloader-mark">
+      <span>C</span><span>K</span>
     </div>
+    <div class="preloader-bar"><i></i></div>
+  </div>
+
+  <!-- ===== scroll progress + custom cursor ===== -->
+  <div class="scroll-progress" data-progress></div>
+  <div class="cursor" data-cursor></div>
+  <div class="cursor-dot" data-cursor-dot></div>
+
+  <!-- ===== ambient background ===== -->
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient-orb ambient-orb--gold"></div>
+    <div class="ambient-orb ambient-orb--violet"></div>
+    <div class="ambient-orb ambient-orb--cyan"></div>
+    <div class="ambient-grid"></div>
+    <div class="ambient-noise"></div>
+  </div>
+
+  <!-- ===== header ===== -->
+  <header class="header" data-header>
+    <a class="brand" href="#top" data-magnet>
+      <img src="./assets/images/New design logo.webp" alt="" width="34" height="34">
+      <span class="brand-text">Clinton<em>.</em></span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a class="nav-link is-active" href="#top" data-nav>Home</a></li>
+        <li><a class="nav-link" href="#about" data-nav>About</a></li>
+        <li><a class="nav-link" href="#work" data-nav>Work</a></li>
+        <li><a class="nav-link" href="#stack" data-nav>Stack</a></li>
+        <li><a class="nav-link" href="#journey" data-nav>Journey</a></li>
+        <li><a class="nav-link" href="#contact" data-nav>Contact</a></li>
+      </ul>
+      <span class="nav-pill" data-nav-pill aria-hidden="true"></span>
+    </nav>
+
+    <a class="btn btn--gold btn--sm header-cta" href="#contact" data-magnet>
+      <span>Hire me</span>
+    </a>
+
+    <button class="burger" data-burger aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== mobile drawer ===== -->
+  <div class="drawer" data-drawer>
+    <nav aria-label="Mobile">
+      <a href="#top" data-drawer-link><i>01</i> Home</a>
+      <a href="#about" data-drawer-link><i>02</i> About</a>
+      <a href="#work" data-drawer-link><i>03</i> Work</a>
+      <a href="#stack" data-drawer-link><i>04</i> Stack</a>
+      <a href="#journey" data-drawer-link><i>05</i> Journey</a>
+      <a href="#contact" data-drawer-link><i>06</i> Contact</a>
+    </nav>
+    <div class="drawer-foot">
+      <a href="mailto:sungurclinton@gmail.com">sungurclinton@gmail.com</a>
+      <a href="tel:+254715329007">+254 715 329 007</a>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <canvas class="hero-canvas" data-canvas aria-hidden="true"></canvas>
+
+      <div class="hero-inner">
+        <p class="eyebrow" data-reveal>
+          <span class="dot-live"></span> Nairobi, Kenya · Available for work
+        </p>
+
+        <h1 class="hero-title" data-reveal data-reveal-delay="1">
+          <span class="line"><span class="w">I build</span> <span class="w gold-text">products</span></span>
+          <span class="line"><span class="w">that go</span> <span class="w outline-text">live.</span></span>
+        </h1>
+
+        <p class="hero-sub" data-reveal data-reveal-delay="2">
+          I'm <strong>Clinton Kiplagat</strong> — a full-stack developer shipping real software for Kenyan
+          businesses. SACCO and billing platforms, AI support desks, M-Pesa payments and brand sites.
+          <span class="hl">Twenty-eight of them are in production right now.</span>
+        </p>
+
+        <div class="hero-cta" data-reveal data-reveal-delay="3">
+          <a class="btn btn--gold" href="#work" data-magnet>
+            <span>See the work</span>
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+          </a>
+          <a class="btn btn--ghost" href="#contact" data-magnet>
+            <span>Start a project</span>
+          </a>
+        </div>
+
+        <ul class="hero-stats" data-reveal data-reveal-delay="4">
+          <li>
+            <b data-count="28">0</b>
+            <span>Live products</span>
+          </li>
+          <li>
+            <b data-count="10">0</b>
+            <span>Custom domains</span>
+          </li>
+          <li>
+            <b data-count="47">0</b>
+            <span>Counties reached</span>
+          </li>
+          <li>
+            <b data-count="100" data-suffix="%">0</b>
+            <span>Shipped, not shelved</span>
+          </li>
+        </ul>
+      </div>
+
+      <a class="hero-scroll" href="#about" aria-label="Scroll to about">
+        <span class="hero-scroll-line"></span>
+        <span class="hero-scroll-text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Next.js</span><i>◆</i><span>React</span><i>◆</i><span>TypeScript</span><i>◆</i>
+        <span>Supabase</span><i>◆</i><span>M-Pesa Daraja</span><i>◆</i><span>Tailwind CSS</span><i>◆</i>
+        <span>PostgreSQL</span><i>◆</i><span>Node.js</span><i>◆</i><span>RAG &amp; LLMs</span><i>◆</i>
+        <span>Vercel</span><i>◆</i>
+        <span>Next.js</span><i>◆</i><span>React</span><i>◆</i><span>TypeScript</span><i>◆</i>
+        <span>Supabase</span><i>◆</i><span>M-Pesa Daraja</span><i>◆</i><span>Tailwind CSS</span><i>◆</i>
+        <span>PostgreSQL</span><i>◆</i><span>Node.js</span><i>◆</i><span>RAG &amp; LLMs</span><i>◆</i>
+        <span>Vercel</span><i>◆</i>
+      </div>
+    </div>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="wrap">
+
+        <header class="sec-head" data-reveal>
+          <span class="sec-num">01</span>
+          <h2 class="sec-title">About</h2>
+          <span class="sec-rule"></span>
+        </header>
+
+        <div class="about-grid">
+
+          <div class="about-copy">
+            <p class="lead" data-reveal>
+              I turn business problems into software that people actually log into every day.
+            </p>
+            <p data-reveal data-reveal-delay="1">
+              Most of what I build lives in the gap between a spreadsheet and a real system — a SACCO tracking
+              member savings on paper, a landlord chasing rent over SMS, a support team drowning in the same five
+              questions. I take that, design the flow, and ship a web app that handles it end to end.
+            </p>
+            <p data-reveal data-reveal-delay="2">
+              My default stack is <strong>Next.js, TypeScript, Supabase and Postgres</strong>, deployed on Vercel.
+              I integrate <strong>M-Pesa STK push</strong> and card payments because that's what the market here
+              runs on, and I've been building increasingly with <strong>LLMs and RAG</strong> — support desks,
+              receptionists and knowledge-base assistants that answer from a company's own content.
+            </p>
+            <p data-reveal data-reveal-delay="3">
+              I care about the boring parts too: role-based access, audit trails, exports the treasurer can take
+              into a committee meeting. A pretty interface that loses data isn't a product.
+            </p>
+
+            <div class="about-tags" data-reveal data-reveal-delay="4">
+              <span>Full-stack</span><span>Product thinking</span><span>Payments</span><span>AI integration</span>
+              <span>Nairobi based</span><span>Remote friendly</span>
+            </div>
+          </div>
+
+          <aside class="about-card" data-reveal data-reveal-delay="2">
+            <div class="about-card-inner" data-tilt>
+              <figure class="avatar">
+                <img src="./assets/images/New design logo.webp" alt="Clinton Kiplagat" width="92" height="92">
+                <span class="avatar-ring"></span>
+              </figure>
+              <h3>Clinton Kiplagat</h3>
+              <p class="about-card-role">Full-Stack Developer</p>
+
+              <ul class="about-facts">
+                <li>
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m2 7 10 6 10-6" /></svg>
+                  <a href="mailto:sungurclinton@gmail.com">sungurclinton@gmail.com</a>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z" /></svg>
+                  <a href="tel:+254715329007">+254 715 329 007</a>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>
+                  <span>Nairobi, Kenya · EAT (UTC+3)</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9" /><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" /></svg>
+                  <span>Open to freelance &amp; full-time</span>
+                </li>
+              </ul>
+
+              <a class="btn btn--gold btn--block" href="#contact" data-magnet><span>Let's talk</span></a>
+            </div>
+          </aside>
+        </div>
+
+        <!-- what I do -->
+        <ul class="services">
+          <li class="service" data-reveal data-accent="gold">
+            <span class="service-num">01</span>
+            <div class="service-ico">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2" /><path d="M2 10h20" /></svg>
+            </div>
+            <h3>Fintech &amp; business systems</h3>
+            <p>SACCO management, billing, paybill reconciliation and loan workflows — with M-Pesa STK push, card
+              payments and reports that survive an audit.</p>
+          </li>
+
+          <li class="service" data-reveal data-reveal-delay="1" data-accent="violet">
+            <span class="service-num">02</span>
+            <div class="service-ico">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1 0 8v1a4 4 0 0 1-8 0v-1a4 4 0 0 1 0-8V6a4 4 0 0 1 4-4Z" /><path d="M12 8v8" /></svg>
+            </div>
+            <h3>AI products &amp; RAG</h3>
+            <p>Support desks and receptionists that answer from your own knowledge base — crawlers, embeddings,
+              lead capture and human takeover when the model should step aside.</p>
+          </li>
+
+          <li class="service" data-reveal data-reveal-delay="2" data-accent="cyan">
+            <span class="service-num">03</span>
+            <div class="service-ico">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4" /><path d="m6 8-4 4 4 4" /><path d="m14.5 4-5 16" /></svg>
+            </div>
+            <h3>Full-stack web apps</h3>
+            <p>Dashboards, portals and internal tools built on Next.js and Supabase — auth, role-based access,
+              real-time data and an interface your team won't fight.</p>
+          </li>
+
+          <li class="service" data-reveal data-reveal-delay="3" data-accent="emerald">
+            <span class="service-num">04</span>
+            <div class="service-ico">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M2 12h20" /><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z" /></svg>
+            </div>
+            <h3>Brand &amp; corporate sites</h3>
+            <p>Fast, accessible marketing sites on custom domains — for NGOs, consultancies, academies and
+              product companies who need to look serious.</p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- ================= WORK ================= -->
+    <section class="section section--work" id="work">
+      <div class="wrap">
+
+        <header class="sec-head" data-reveal>
+          <span class="sec-num">02</span>
+          <h2 class="sec-title">Selected work</h2>
+          <span class="sec-rule"></span>
+        </header>
+
+        <p class="sec-intro" data-reveal data-reveal-delay="1">
+          Every card below links to something live. No mockups, no concepts — production deployments,
+          ten of them on their own custom domains.
+        </p>
+
+        <div class="filters" data-reveal data-reveal-delay="2">
+          <button class="filter is-active" data-filter="all">All <i>28</i></button>
+          <button class="filter" data-filter="fintech">Fintech <i>5</i></button>
+          <button class="filter" data-filter="ai">AI <i>4</i></button>
+          <button class="filter" data-filter="platform">Platforms <i>6</i></button>
+          <button class="filter" data-filter="site">Websites <i>13</i></button>
+        </div>
+
+        <div class="proj-grid" data-grid>
+          <article class="proj is-shown" data-cat="fintech" data-accent="gold" data-reveal>
+            <a class="proj-link" href="https://sacco-system-psi.vercel.app" target="_blank" rel="noopener noreferrer"
+              data-tilt>
+              <span class="proj-flag proj-flag--star">Flagship</span>
+              <div class="proj-cover"><span class="proj-mark">SH</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">SaccoHub <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Full SACCO management for Kenyan cooperatives: members, savings, shares, loans,
+                  welfare, dividends, SMS broadcasts and M-Pesa STK push.</p>
+                <div class="chips"><span>Next.js</span><span>M-Pesa</span><span>RBAC</span></div>
+                <span class="proj-host">sacco-system-psi.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="ai" data-accent="violet" data-reveal data-reveal-delay="1">
+            <a class="proj-link" href="https://ai-desk-jet.vercel.app" target="_blank" rel="noopener noreferrer"
+              data-tilt>
+              <span class="proj-flag proj-flag--star">Flagship</span>
+              <div class="proj-cover"><span class="proj-mark">MC</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">MyChat <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">AI customer-support desk: embeddable chat widget, a crawler that builds your
+                  knowledge base, lead capture and a shared team inbox with human takeover.</p>
+                <div class="chips"><span>RAG</span><span>LLM</span><span>Next.js</span></div>
+                <span class="proj-host">ai-desk-jet.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="platform" data-accent="cyan" data-reveal data-reveal-delay="2">
+            <a class="proj-link" href="https://youth-action-hub.vercel.app" target="_blank" rel="noopener noreferrer"
+              data-tilt>
+              <span class="proj-flag proj-flag--star">Flagship</span>
+              <div class="proj-cover"><span class="proj-mark">YA</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">Youth Action Hub <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Development-intelligence platform for Kenyan youth — tracking national projects
+                  and surfacing opportunities across all 47 counties.</p>
+                <div class="chips"><span>Next.js</span><span>Data</span><span>Civic</span></div>
+                <span class="proj-host">youth-action-hub.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="site" data-accent="coral" data-reveal>
+            <a class="proj-link" href="https://kwetuorganics.com" target="_blank" rel="noopener noreferrer" data-tilt>
+              <span class="proj-flag">Custom domain</span>
+              <div class="proj-cover"><span class="proj-mark">KO</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">Kwetu Organics <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Storefront and brand site for an organic produce business, live on
+                  kwetuorganics.com.</p>
+                <div class="chips"><span>Next.js</span><span>Commerce</span></div>
+                <span class="proj-host">kwetuorganics.com</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="fintech" data-accent="gold" data-reveal data-reveal-delay="1">
+            <a class="proj-link" href="https://xuremiwallet.app" target="_blank" rel="noopener noreferrer" data-tilt>
+              <span class="proj-flag">Custom domain</span>
+              <div class="proj-cover"><span class="proj-mark">XU</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">Xuremi Wallet <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">A digital wallet product — balances, transfers and transaction history built
+                  for mobile-first users.</p>
+                <div class="chips"><span>Next.js</span><span>Payments</span></div>
+                <span class="proj-host">xuremiwallet.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="ai" data-accent="violet" data-reveal data-reveal-delay="2">
+            <a class="proj-link" href="https://smart-ai-rag-frontend.vercel.app" target="_blank"
+              rel="noopener noreferrer" data-tilt>
+              <div class="proj-cover"><span class="proj-mark">SR</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">Smart AI RAG <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Retrieval-augmented chat over your own documents — ingest, embed, retrieve and
+                  answer with citations instead of guesses.</p>
+                <div class="chips"><span>RAG</span><span>Embeddings</span></div>
+                <span class="proj-host">smart-ai-rag-frontend.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="site" data-accent="emerald" data-reveal>
+            <a class="proj-link" href="https://jvp.co.ke" target="_blank" rel="noopener noreferrer" data-tilt>
+              <span class="proj-flag">Custom domain</span>
+              <div class="proj-cover"><span class="proj-mark">JV</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">JVP <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Corporate site for a Kenyan firm, live on jvp.co.ke.</p>
+                <div class="chips"><span>Next.js</span><span>Corporate</span></div>
+                <span class="proj-host">jvp.co.ke</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="platform" data-accent="cyan" data-reveal data-reveal-delay="1">
+            <a class="proj-link" href="https://care360-two.vercel.app" target="_blank" rel="noopener noreferrer"
+              data-tilt>
+              <div class="proj-cover"><span class="proj-mark">C3</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">Care360 <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">A care-management platform bringing patients, providers and records into a
+                  single coordinated view.</p>
+                <div class="chips"><span>Next.js</span><span>HealthTech</span></div>
+                <span class="proj-host">care360-two.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="fintech" data-accent="gold" data-reveal data-reveal-delay="2">
+            <a class="proj-link" href="https://beltonlabs.online" target="_blank" rel="noopener noreferrer" data-tilt>
+              <span class="proj-flag">Custom domain</span>
+              <div class="proj-cover"><span class="proj-mark">BL</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">Belton Labs Paybill <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Paybill manager for reconciling M-Pesa business payments — tracking who paid,
+                  for what, and what's still outstanding.</p>
+                <div class="chips"><span>Next.js</span><span>M-Pesa</span></div>
+                <span class="proj-host">beltonlabs.online</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="ai" data-accent="violet" data-reveal>
+            <a class="proj-link" href="https://ai-receptionist-pink.vercel.app" target="_blank" rel="noopener noreferrer"
+              data-tilt>
+              <div class="proj-cover"><span class="proj-mark">AR</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">AI Receptionist <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">A front-desk agent that greets visitors, answers routine questions and books
+                  appointments without a human in the loop.</p>
+                <div class="chips"><span>LLM</span><span>Scheduling</span></div>
+                <span class="proj-host">ai-receptionist-pink.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="site" data-accent="emerald" data-reveal data-reveal-delay="1">
+            <a class="proj-link" href="https://acsapkenya.org" target="_blank" rel="noopener noreferrer" data-tilt>
+              <span class="proj-flag">Custom domain</span>
+              <div class="proj-cover"><span class="proj-mark">AC</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">ACSAP Kenya <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Web app for a Kenyan organisation — programmes, resources and public-facing
+                  presence on acsapkenya.org.</p>
+                <div class="chips"><span>Next.js</span><span>NGO</span></div>
+                <span class="proj-host">acsapkenya.org</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="platform" data-accent="cyan" data-reveal data-reveal-delay="2">
+            <a class="proj-link" href="https://job-tracker-ochre-three.vercel.app" target="_blank"
+              rel="noopener noreferrer" data-tilt>
+              <div class="proj-cover"><span class="proj-mark">JT</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">Job Tracker <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Application pipeline for job hunters — stages, follow-ups and interview notes,
+                  so nothing goes cold by accident.</p>
+                <div class="chips"><span>Next.js</span><span>Supabase</span></div>
+                <span class="proj-host">job-tracker-ochre-three.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="site" data-accent="cyan" data-reveal>
+            <a class="proj-link" href="https://blitzconsultancy.com" target="_blank" rel="noopener noreferrer" data-tilt>
+              <span class="proj-flag">Custom domain</span>
+              <div class="proj-cover"><span class="proj-mark">BV</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">Blitz Vive Consultants <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Corporate site for a global consultancy — services, credentials and enquiry
+                  funnel on blitzconsultancy.com.</p>
+                <div class="chips"><span>Vite</span><span>Corporate</span></div>
+                <span class="proj-host">blitzconsultancy.com</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="ai" data-accent="violet" data-reveal data-reveal-delay="1">
+            <a class="proj-link" href="https://ai-course-generator-blond.vercel.app" target="_blank"
+              rel="noopener noreferrer" data-tilt>
+              <div class="proj-cover"><span class="proj-mark">CG</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">AI Course Generator <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Turns a topic into a structured course — modules, lessons and assessments
+                  generated and editable before publishing.</p>
+                <div class="chips"><span>LLM</span><span>EdTech</span></div>
+                <span class="proj-host">ai-course-generator-blond.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="fintech" data-accent="gold" data-reveal data-reveal-delay="2">
+            <a class="proj-link" href="https://billing-system-puce-ten.vercel.app" target="_blank"
+              rel="noopener noreferrer" data-tilt>
+              <div class="proj-cover"><span class="proj-mark">BS</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">Billing System <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Invoicing and recurring billing — customers, line items, statements and
+                  payment status in one dashboard.</p>
+                <div class="chips"><span>Next.js</span><span>Postgres</span></div>
+                <span class="proj-host">billing-system-puce-ten.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="platform" data-accent="cyan" data-reveal>
+            <a class="proj-link" href="https://storeit-ten.vercel.app" target="_blank" rel="noopener noreferrer"
+              data-tilt>
+              <div class="proj-cover"><span class="proj-mark">ST</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">StoreIt <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Cloud storage and file management — upload, organise, preview and share, with
+                  usage broken down by file type.</p>
+                <div class="chips"><span>Next.js</span><span>Storage</span></div>
+                <span class="proj-host">storeit-ten.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="site" data-accent="emerald" data-reveal data-reveal-delay="1">
+            <a class="proj-link" href="https://kucsa.co.ke" target="_blank" rel="noopener noreferrer" data-tilt>
+              <span class="proj-flag">Custom domain</span>
+              <div class="proj-cover"><span class="proj-mark">KU</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">KUCSA <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Student association platform on kucsa.co.ke — events, membership and
+                  announcements.</p>
+                <div class="chips"><span>React</span><span>Community</span></div>
+                <span class="proj-host">kucsa.co.ke</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="site" data-accent="coral" data-reveal data-reveal-delay="2">
+            <a class="proj-link" href="https://jamuhuri-soccer-academy.vercel.app" target="_blank"
+              rel="noopener noreferrer" data-tilt>
+              <div class="proj-cover"><span class="proj-mark">JS</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">Jamuhuri Soccer Academy <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Academy site — teams, training programmes, fixtures and player registration.</p>
+                <div class="chips"><span>Next.js</span><span>Sports</span></div>
+                <span class="proj-host">jamuhuri-soccer-academy.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="platform" data-accent="cyan" data-reveal>
+            <a class="proj-link" href="https://yovel.space" target="_blank" rel="noopener noreferrer" data-tilt>
+              <span class="proj-flag">Custom domain</span>
+              <div class="proj-cover"><span class="proj-mark">YV</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">Yovel <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">A product platform built end to end on Next.js and shipped to its own domain.</p>
+                <div class="chips"><span>Next.js</span><span>Product</span></div>
+                <span class="proj-host">yovel.space</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="site" data-accent="emerald" data-reveal data-reveal-delay="1">
+            <a class="proj-link" href="https://greensoundsolution.com" target="_blank" rel="noopener noreferrer"
+              data-tilt>
+              <span class="proj-flag">Custom domain</span>
+              <div class="proj-cover"><span class="proj-mark">GS</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">Greensound Solution <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Brand and services site on greensoundsolution.com.</p>
+                <div class="chips"><span>Next.js</span><span>Brand</span></div>
+                <span class="proj-host">greensoundsolution.com</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="fintech" data-accent="gold" data-reveal data-reveal-delay="2">
+            <a class="proj-link" href="https://kra-doc-app.vercel.app" target="_blank" rel="noopener noreferrer"
+              data-tilt>
+              <div class="proj-cover"><span class="proj-mark">KR</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">KRA Doc App <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Tax document handling — organising, generating and retrieving the paperwork
+                  compliance actually asks for.</p>
+                <div class="chips"><span>Next.js</span><span>Documents</span></div>
+                <span class="proj-host">kra-doc-app.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="site" data-accent="gold" data-reveal>
+            <a class="proj-link" href="https://nemu-solar.vercel.app" target="_blank" rel="noopener noreferrer"
+              data-tilt>
+              <div class="proj-cover"><span class="proj-mark">NS</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">Nemu Solar <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Marketing site for a solar energy company — products, installation services and
+                  quote requests.</p>
+                <div class="chips"><span>Vite</span><span>Energy</span></div>
+                <span class="proj-host">nemu-solar.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="platform" data-accent="cyan" data-reveal data-reveal-delay="1">
+            <a class="proj-link" href="https://30things.vercel.app" target="_blank" rel="noopener noreferrer" data-tilt>
+              <div class="proj-cover"><span class="proj-mark">30</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">30 Things <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">A habit and goal tracker built around short, finishable streaks rather than
+                  open-ended lists.</p>
+                <div class="chips"><span>Next.js</span><span>Productivity</span></div>
+                <span class="proj-host">30things.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="site" data-accent="emerald" data-reveal data-reveal-delay="2">
+            <a class="proj-link" href="https://mbogigreenmashinani.org" target="_blank" rel="noopener noreferrer"
+              data-tilt>
+              <span class="proj-flag">Custom domain</span>
+              <div class="proj-cover"><span class="proj-mark">MG</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">Mbogi Green Mashinani <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Grassroots environmental initiative site — mission, activities and community
+                  outreach on mbogigreenmashinani.org.</p>
+                <div class="chips"><span>Web</span><span>NGO</span></div>
+                <span class="proj-host">mbogigreenmashinani.org</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="site" data-accent="coral" data-reveal>
+            <a class="proj-link" href="https://82sports.vercel.app" target="_blank" rel="noopener noreferrer" data-tilt>
+              <div class="proj-cover"><span class="proj-mark">82</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">82 Sports <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Sports brand site with fixtures, team profiles and merchandise presentation.</p>
+                <div class="chips"><span>Next.js</span><span>Sports</span></div>
+                <span class="proj-host">82sports.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="site" data-accent="emerald" data-reveal data-reveal-delay="1">
+            <a class="proj-link" href="https://one-peace-kenya.vercel.app" target="_blank" rel="noopener noreferrer"
+              data-tilt>
+              <div class="proj-cover"><span class="proj-mark">OP</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">One Peace Kenya <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Site for a peace-building initiative — programmes, impact and ways to get
+                  involved.</p>
+                <div class="chips"><span>Next.js</span><span>NGO</span></div>
+                <span class="proj-host">one-peace-kenya.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="site" data-accent="cyan" data-reveal data-reveal-delay="2">
+            <a class="proj-link" href="https://pitstop-carwash.vercel.app" target="_blank" rel="noopener noreferrer"
+              data-tilt>
+              <div class="proj-cover"><span class="proj-mark">PS</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">Pitstop Carwash <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">Booking-led site for a carwash business — services, pricing tiers and
+                  appointment requests.</p>
+                <div class="chips"><span>Next.js</span><span>Booking</span></div>
+                <span class="proj-host">pitstop-carwash.vercel.app</span>
+              </div>
+            </a>
+          </article>
+          <article class="proj is-shown" data-cat="site" data-accent="violet" data-reveal>
+            <a class="proj-link" href="https://sagana-mike-portfolio.vercel.app" target="_blank"
+              rel="noopener noreferrer" data-tilt>
+              <div class="proj-cover"><span class="proj-mark">SM</span><span class="proj-shine"></span></div>
+              <div class="proj-body">
+                <h3 class="proj-name">Sagana Mike Portfolio <span class="proj-arrow">↗</span></h3>
+                <p class="proj-desc">A personal portfolio built for a client — clean, fast and easy for them to
+                  keep updated.</p>
+                <div class="chips"><span>Next.js</span><span>Portfolio</span></div>
+                <span class="proj-host">sagana-mike-portfolio.vercel.app</span>
+              </div>
+            </a>
+          </article>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STACK ================= -->
+    <section class="section" id="stack">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <span class="sec-num">03</span>
+          <h2 class="sec-title">Stack</h2>
+          <span class="sec-rule"></span>
+        </header>
+
+        <p class="sec-intro" data-reveal data-reveal-delay="1">
+          What I reach for by default — and the 3D cube is just CSS, no library.
+        </p>
+
+        <div class="stack-grid">
+
+          <div class="cube-stage" data-reveal data-reveal-delay="2" aria-hidden="true">
+            <div class="cube" data-cube>
+              <span class="face face--front">TS</span>
+              <span class="face face--back">SQL</span>
+              <span class="face face--right">JS</span>
+              <span class="face face--left">CSS</span>
+              <span class="face face--top">⚛</span>
+              <span class="face face--bottom">▲</span>
+            </div>
+            <div class="cube-shadow"></div>
+          </div>
+
+          <div class="stack-cols">
+            <div class="stack-col" data-reveal data-reveal-delay="2">
+              <h3><span class="sw sw--gold"></span> Frontend</h3>
+              <ul>
+                <li>Next.js (App Router)</li>
+                <li>React &amp; TypeScript</li>
+                <li>Tailwind CSS</li>
+                <li>Framer Motion</li>
+                <li>Vite</li>
+              </ul>
+            </div>
+            <div class="stack-col" data-reveal data-reveal-delay="3">
+              <h3><span class="sw sw--cyan"></span> Backend &amp; data</h3>
+              <ul>
+                <li>Supabase</li>
+                <li>PostgreSQL</li>
+                <li>Node.js</li>
+                <li>Row-level security</li>
+                <li>REST &amp; server actions</li>
+              </ul>
+            </div>
+            <div class="stack-col" data-reveal data-reveal-delay="4">
+              <h3><span class="sw sw--violet"></span> AI</h3>
+              <ul>
+                <li>LLM integration</li>
+                <li>RAG pipelines</li>
+                <li>Embeddings &amp; vector search</li>
+                <li>Web crawlers</li>
+                <li>Agent workflows</li>
+              </ul>
+            </div>
+            <div class="stack-col" data-reveal data-reveal-delay="5">
+              <h3><span class="sw sw--emerald"></span> Platform</h3>
+              <ul>
+                <li>Vercel</li>
+                <li>M-Pesa Daraja API</li>
+                <li>Card payments</li>
+                <li>SMS gateways</li>
+                <li>Git &amp; GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= JOURNEY ================= -->
+    <section class="section section--journey" id="journey">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <span class="sec-num">04</span>
+          <h2 class="sec-title">Journey</h2>
+          <span class="sec-rule"></span>
+        </header>
+
+        <div class="journey-grid">
+
+          <div class="tl-col">
+            <h3 class="tl-head" data-reveal>
+              <span class="tl-ico">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" /></svg>
+              </span>
+              Education
+            </h3>
+
+            <ol class="tl">
+              <li data-reveal>
+                <span class="tl-when">2022 — 2025</span>
+                <h4>Zetech University</h4>
+                <p>Where the fundamentals got formalised — data structures, databases and software engineering
+                  practice, alongside the client work I was already shipping.</p>
+              </li>
+              <li data-reveal data-reveal-delay="1">
+                <span class="tl-when">2018 — 2021</span>
+                <h4>Samoei Boys High School</h4>
+                <p>Secondary education, and the first time I wrote code that did something useful for someone
+                  other than me.</p>
+              </li>
+              <li data-reveal data-reveal-delay="2">
+                <span class="tl-when">2009 — 2017</span>
+                <h4>AIC Chebarus Primary</h4>
+                <p>Primary education.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="tl-col">
+            <h3 class="tl-head" data-reveal data-reveal-delay="1">
+              <span class="tl-ico">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" /><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /></svg>
+              </span>
+              Experience
+            </h3>
+
+            <ol class="tl">
+              <li data-reveal data-reveal-delay="1">
+                <span class="tl-when tl-when--now">2025 — Present</span>
+                <h4>Full-Stack Developer · Independent</h4>
+                <p>Designing and shipping production systems for SACCOs, consultancies, NGOs and product teams —
+                  from database schema to deployed domain. Most recent focus: AI support tooling and civic-data
+                  platforms.</p>
+              </li>
+              <li data-reveal data-reveal-delay="2">
+                <span class="tl-when">2024 — 2025</span>
+                <h4>Web Developer · Freelance</h4>
+                <p>Corporate sites and web apps for Kenyan organisations, several now running on their own custom
+                  domains. This is where M-Pesa integration became a standard part of my toolkit.</p>
+              </li>
+              <li data-reveal data-reveal-delay="3">
+                <span class="tl-when">2023 — 2024</span>
+                <h4>Building in public</h4>
+                <p>Clones, experiments and first client work — the unglamorous reps that turned into a stack I
+                  can move fast in.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="trusted" data-reveal>
+          <p class="trusted-label">Organisations I've built for</p>
+          <ul class="trusted-list">
+            <li>JVP</li>
+            <li>ACSAP Kenya</li>
+            <li>KUCSA</li>
+            <li>Kwetu Organics</li>
+            <li>Blitz Vive Consultants</li>
+            <li>Greensound Solution</li>
+            <li>Mbogi Green Mashinani</li>
+            <li>Belton Labs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section--contact" id="contact">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <span class="sec-num">05</span>
+          <h2 class="sec-title">Contact</h2>
+          <span class="sec-rule"></span>
+        </header>
+
+        <div class="contact-grid">
+
+          <div class="contact-left" data-reveal data-reveal-delay="1">
+            <h3 class="contact-big">
+              Got something<br><span class="gold-text">worth building?</span>
+            </h3>
+            <p class="contact-note">
+              Tell me what the problem is and who it's for. I'll come back with how I'd approach it, what it
+              takes, and whether I'm the right person for it.
+            </p>
+
+            <ul class="contact-links">
+              <li>
+                <span class="cl-label">Email</span>
+                <a href="mailto:sungurclinton@gmail.com" data-magnet>sungurclinton@gmail.com</a>
+              </li>
+              <li>
+                <span class="cl-label">Phone</span>
+                <a href="tel:+254715329007" data-magnet>+254 715 329 007</a>
+              </li>
+              <li>
+                <span class="cl-label">Location</span>
+                <span>Nairobi, Kenya — working remotely worldwide</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" data-form>
+            <input type="hidden" name="access_key" value="807a140d-2175-4926-ac38-05bc1e746d00">
+            <input type="hidden" name="subject" value="New message from your portfolio">
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+
+            <div class="field" data-reveal data-reveal-delay="2">
+              <input type="text" id="f-name" name="fullname" placeholder=" " required>
+              <label for="f-name">Full name</label>
+            </div>
+
+            <div class="field" data-reveal data-reveal-delay="3">
+              <input type="email" id="f-email" name="email" placeholder=" " required>
+              <label for="f-email">Email address</label>
+            </div>
+
+            <div class="field" data-reveal data-reveal-delay="4">
+              <textarea id="f-msg" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="f-msg">What are you building?</label>
+            </div>
+
+            <button class="btn btn--gold btn--block" type="submit" data-magnet>
+              <span>Send message</span>
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z" /><path d="M22 2 11 13" /></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
 
   </main>
 
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <span class="brand-text">Clinton<em>.</em></span>
+        <p>Full-stack developer · Nairobi, Kenya</p>
+      </div>
 
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
+      <p class="footer-meta">
+        <span>&copy; <span data-year>2026</span> Clinton Kiplagat</span>
+        <a class="to-top" href="#top" data-magnet>Back to top ↑</a>
+      </p>
+    </div>
+  </footer>
 
-
-
-  <!--
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
